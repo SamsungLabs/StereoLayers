@@ -1,8 +1,7 @@
-@misc{khakhulin2022stereo,
-      title={Stereo Magnification with Multi-Layer Images}, 
-      author={Taras Khakhulin and Denis Korzhenkov and Pavel Solovev and Gleb Sterkin and Timotei Ardelean and Victor Lempitsky},
-      year={2022},
-      eprint={2201.05023},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{Khakhulin2021SLayers,
+                  author    = {Khakhulin, Taras and Korzhenkov, Denis and Solovev, Pavel and Sterkin, Gleb and Ardelean, Timotei and Lempitsky, Victor},
+                  title     = {Stereo Magnification with Multi-Layer Images},
+                  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+                  month = {June},
+                  year = {2022},
 }
