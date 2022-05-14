@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<title>SWORD</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("/w3images/mac.jpg");
+  min-height: 100%;
+}
+
+.w3-img {
+  padding: 4px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+ 
+.iframe-container iframe {
+   border: 0;
+   height: 100%;
+   left: 0;
+   position: absolute;
+   top: 4px;
+   width: 100%;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+</style>
+<body>
+
+
+<!-- Custom fonts for this template -->
+<link href="../static/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="../static/vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+<link href="../static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <!-- <a href="#home" class="w3-bar-item w3-button w3-wide">LOGO</a> -->
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#home" class="w3-bar-item w3-button">Home</a>
+      <a href="#abstract" class="w3-bar-item w3-button">About</a>
+      <a href="#data" class="w3-bar-item w3-button">Downloads</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">Home</a>
+  <a href="#abstract" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#code" onclick="w3_close()" class="w3-bar-item w3-button">Downloads</a>
+  <a href="#video" onclick="w3_close()" class="w3-bar-item w3-button">Scheme</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-padding-64" id="home">
+  <div class="w3-row w3-text-black w3-padding-4">
+    <div class="w3-col s1 m1 l1">&nbsp;</div>
+    <div class="w3-col s10 m10 l10 w3-center">
+      <span class="w3-xxlarge w3-hide-medium w3-hide-small" style="font-size:4.310vw !important">SWORD</span>
+      <span class="w3-xxlarge w3-hide-large w3-hide-small"  style="font-size:5.300vw !important">SWORD</span>
+      <span class="w3-xlarge w3-hide-large w3-hide-medium">SWORD</span>
+      </br>
+      <span class="w3-xxlarge w3-hide-medium w3-hide-small" style="font-size:2.862vw !important">The Scenes With Occluded Regions Dataset</span>
+      <span class="w3-xxlarge w3-hide-large w3-hide-small"  style="font-size:3.724vw !important">The Scenes With Occluded Regions Dataset</span>
+      <span class="w3-xlarge w3-hide-large w3-hide-medium">The Scenes With Occluded Regions Dataset</span>
+    </div>
+    <div class="w3-col s1 m1 l1">&nbsp;</div>
+  </div>
+
+
+  <div class="w3-row w3-text-black w3-hide-small w3-padding-4">&nbsp;</div>
+  <div class="w3-row w3-text-black w3-padding-4">
+    <div class="w3-col m1 l2">&nbsp;</div>
+    <div class="w3-col  w3-center">
+      <video poster="" id="" autoplay controls muted loop width="65%">
+        <source src="../static/sword_assets/grid.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="w3-col m1 l2">&nbsp;</div>
+  </div>
+
+  <div class="w3-row w3-text-black w3-hide-small w3-padding-4">&nbsp;</div>
+  <div class="w3-row w3-text-black w3-hide-small w3-padding-4">
+    <div class="w3-col m1 l2">&nbsp;</div>
+    <div class="w3-col s10 m10 l8 w3-center">
+        <span class="w3-large">Figure 1: <b>Results of StereoLayers for SWORD Scenes</b>.</span>
+    </div>
+    <div class="w3-col m1 l2">&nbsp;</div>
+  </div>
+
+
+
+<!-- Abstract Section -->
+<div class="bgimg-1 w3-padding-64" id="abstract">
+  <div class="w3-row w3-text-black w3-padding-16">
+    <div class="w3-col s1 m1 l2">&nbsp;</div>
+    <div class="w3-col s10 m10 l8 w3-left-align">
+      <span class="w3-xxlarge" >About dataset</span>
+    </div>
+    <div class="w3-col s1 m1 l2">&nbsp;</div>
+  </div>
+  <div class="w3-row w3-text-black w3-padding-4">
+    <div class="w3-col s1 m1 l2">&nbsp;</div>
+    <div class="w3-col s10 m10 l8 w3-justify">
+        <span class="w3-large">
+          The Scenes With Occluded Regions Dataset (SWORD) contains around 1500 videos with 50 frames per video on average. 
+          The dataset was obtained after processing the manually captured video sequences of static real-life urban scenes.
+          The main property of the dataset is the abundance of close objects and, consequently, larger prevalence of occlusions. 
+          For each video, the poses form a trajectory where each pose specifies the camera position and orientation along the trajectory.
+
+        </span>
+    </div>
+    <div class="w3-col s1 m1 l2">&nbsp;</div>
+  </div>
+  <div class="w3-row w3-text-black w3-hide-small w3-padding-4">&nbsp;</div>
+  <div class="w3-row w3-text-black w3-padding-4">
+    <div class="w3-col m1 l2">&nbsp;</div>
+    <div class="w3-col m10 l8 w3-center w3-img">
+      <img style="width: 50%" src="../static/sword_assets/mask_example.png">
+    </div>
+    <div class="w3-col m1 l2">&nbsp;</div>
+  </div>
+  <!-- <div class="w3-row w3-text-black w3-hide-small w3-padding-4">&nbsp;</div> -->
+  <div class="w3-row w3-text-black w3-hide-small">
+    <div class="w3-col m1 l4">&nbsp;</div>
+    <div class="w3-col s10 m10 l4 w3-center">
+        <span class="w3-large">Figure 2: Samples from dataset with estimated occlusion masks for the given stereo pairs. See supplementary of the paper.  </span>
+    </div>
+    <div class="w3-col m1 l2">&nbsp;</div>
+  </div>
+</div>
+
+<div class="bgimg-1 w3-padding-64" id="data">
+  <div class="w3-row w3-text-black w3-padding-16">
+    <div class="w3-col s1 m1 l2">&nbsp;</div>
+    <div class="w3-col s10 m10 l8 w3-left-align">
+      <span class="w3-xxlarge" >Downloads</span>
+    </div>
+    <div class="w3-col s1 m1 l2">&nbsp;</div>
+  </div>
+  <div class="w3-row w3-text-black w3-padding-4">
+    <div class="w3-col s1 m1 l2">&nbsp;</div>
+    <div class="w3-col s10 m10 l8 w3-justify">
+        <span class="w3-large">
+          We share the overall dataset with two cloud sources (Y- and G- drives).
+          Besides, we publish a tiny version of the additional test scenes with a nice appearance and small size (collected on different devices). 
+          We suggest using them to test your method.
+          We design the camera format and processing same as for <u><a href="https://google.github.io/realestate10k/download.html">RealEstate10k</a></u>. 
+          We recommend you checking more details in the original paper. 
+          The camera intrinsics are expressed in normalized image coordinates, where the top left corner is (0,0), and the bottom right is (1,1).
+            </span>
+    </div>
+
+  <div class="w3-row w3-text-black w3-padding-4">
+    <div class="w3-col s1 m1 l2">&nbsp;</div>
+    <div class="w3-col s10 m10 l8 w3-justify">
+        <span class="w3-large">
+          You may download a .zip file with the data using the following links:
+         </span>
+  </div>   
+
+  <section class="container">
+  <div class="w3-row text-center">
+
+  <div class="w3-col m10 l10">&nbsp;</div>
+
+  <div class="w3-col  m3 s4 l3 w3-center">
+    <a target="_blank" rel="noopener noreferrer" href="https://disk.yandex.ru/d/VQldVSTEqepGtA/SWORD">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 20%" class="img_links img-responsive" viewBox="0 0 24 24"><path d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092z"/></svg>
+      <p></p>
+      <div class="author"><b>Dataset (YDrive)</b></div>
+    </a>
+  </div>
+
+  <div class="w3-col  m3 s4 l3 w3-center">
+    <a  rel="noopener noreferrer" href="TODO">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 20%" class="img_links img-responsive" viewBox="0 0 24 24"><path d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092z"/></svg>
+      <p></p>
+      <div class="author"><b>Dataset (GDrive)</b></div>
+    </a>
+  </div>
+
+  <div class="w3-col m3 s4 l3 w3-center">
+    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/file/d/1pF7gPZme2SNfJkmH3JPkhPP90EAuwTNA">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 20%" class="img_links img-responsive" viewBox="0 0 24 24"><path d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092z"/></svg>
+      <p></p>
+      <div class="author"><b> Small Test Data</b></div>
+      <div class="text">(Direct link to zip)</div>
+    </a>
+  </div>
+
+
+
+  <div class="w3-col m3 s4 l3 w3-center">
+    <a  rel="noopener noreferrer" href="TODO">
+      <svg xmlns="http://www.w3.org/2000/svg" style="width: 20%" class="img_links img-responsive" viewBox="0 0 24 24"><path d="M12 5c3.453 0 5.891 2.797 5.567 6.78 1.745-.046 4.433.751 4.433 3.72 0 1.93-1.57 3.5-3.5 3.5h-13c-1.93 0-3.5-1.57-3.5-3.5 0-2.797 2.479-3.833 4.433-3.72-.167-4.218 2.208-6.78 5.567-6.78zm0-2c-4.006 0-7.267 3.141-7.479 7.092-2.57.463-4.521 2.706-4.521 5.408 0 3.037 2.463 5.5 5.5 5.5h13c3.037 0 5.5-2.463 5.5-5.5 0-2.702-1.951-4.945-4.521-5.408-.212-3.951-3.473-7.092-7.479-7.092z"/></svg>
+      <p></p>
+        <!-- <i class="fa fa-camera m-auto text-primary"></i> -->
+      <div class="author"><b>PyTorch Dataset</b></div>
+      <div class="text">(Soon)</div>
+    </a>
+  </div>
+  
+</div>
+</section>
+
+
+  
+<div class="w3-row w3-text-black w3-hide-small w3-padding-32">
+  <div class="w3-col s1 m1 l2">&nbsp;</div>
+  <div class="w3-col s10 m10 l8 w3-justify">
+      <span class="w3-large">
+        The data splits .zip file contains following data:
+          <ul>
+            <li><b>dataset.csv</b> -- full list of the dataset with the following information: 
+              File paths, Scene params (from colmap) and Intrinsic (relative). Original resolution of images is  full HD (1920x1080).</li>
+            <li><b>views</b> -- folder with txt that contains extrinsics and intrinsics of the each image on scene,</li>
+            <li><b>videos</b> -- folder with frames for each scene, all frames named according to corresponded timestamp.</li>
+          </ul>
+
+        <span class="w3-large">
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+</body>
+</html>
